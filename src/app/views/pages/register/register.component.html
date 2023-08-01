@@ -1,0 +1,83 @@
+<div class="jumbotron jumbotron-fluid m-0 p-0">
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="col-md-6 p-0">
+        <img class="image-login" src="../../../../assets/irfan-simsar-wxWulfjN-G0-unsplash (1) 1.png" alt="">
+      </div>
+      <div class="col-md-6">
+        <h5 class="text-center text-title mt-2">Start building your Top Company!</h5>
+        <div class="d-flex justify-content-center align-items-center">
+          <form class=""> <!-- You can adjust the width as needed -->
+            <div class="form-group">
+              <label class="label mb-2" for="email">Email</label>
+              <input type="email" class="form-control form-control-user mb-2" id="email" placeholder="yourcompany@mail.com">
+            </div>
+            <div class="form-group">
+              <label class="label mb-2" for="password">Password</label>
+              <div class="input-group">
+                <div class="form-control-user">
+                  <div class="input-container mb-2">
+                    <input class="form-control form-control-user2" matInput [type]="hide ? 'password' : 'text'" id="password" placeholder="Password123@" required="">
+                    <mat-icon matPrefix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                      {{hide ? 'visibility_off' : 'visibility'}}
+                    </mat-icon>
+                  </div>
+                </div>              
+              </div>
+              <small id="emailHelp" class="text-hint mt-2">Password required:</small>
+              <br>
+              <small id="emailHelp" class="text-hint-option"><span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                  <circle cx="4" cy="4" r="4" fill="#42FF32"/>
+                </svg></span>min 8 character</small>
+              <br>
+              <small id="emailHelp" class="text-hint-option"><span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                  <circle cx="4" cy="4" r="4" fill="#42FF32"/>
+                </svg></span>1 upper-case [A-Z]</small>
+              <br>
+              <small id="emailHelp" class="text-hint-option"><span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                  <circle cx="4" cy="4" r="4" fill="#42FF32"/>
+                </svg></span>1 lower-case [a-z]</small>
+              <br>
+              <small id="emailHelp" class="text-hint-option"><span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                  <circle cx="4" cy="4" r="4" fill="#42FF32"/>
+                </svg></span>1 number [0-9]</small>
+              <br>
+              <small id="emailHelp" class="text-hint-option"><span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                  <circle cx="4" cy="4" r="4" fill="#42FF32"/>
+                </svg></span>1 symbol/special character</small> 
+            </div>
+            <div class="form-group">
+              <label class="label mb-2" for="password">Re-enter Password</label>
+              <div class="input-group">
+                <div class="form-control-user">
+                  <div class="input-container mb-2">
+                    <input class="form-control form-control-user2" matInput [type]="hide ? 'password' : 'text'" id="password" placeholder="Password123@" required="">
+                    <mat-icon matPrefix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                      {{hide ? 'visibility_off' : 'visibility'}}
+                    </mat-icon>
+                  </div>
+                </div>              
+              </div>
+            </div>             
+            <div class="form-group">
+              <label class="label mb-2" for="company">Company</label>
+              <input type="text" class="form-control form-control-user mb-2" id="company" placeholder="Your Company Name">
+            </div>
+            <div class="form-group">
+              <label class="label mb-2" for="industry">Industry</label>
+              <input type="text" class="form-control form-control-user mb-2" id="industry" placeholder="ex: Technology, Financial">
+            </div>
+            <button cButton class="btn btn-primary">Create Account</button>
+          </form>
+        </div>     
+      </div>
+    </div>
+  </div>
+</div>
+
+

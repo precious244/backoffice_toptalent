@@ -1,0 +1,294 @@
+<header id="header">
+    <nav class="navbar navbar-custom navbar-expand-lg">
+        <div class="container-fluid ms-5 ps-4">
+            <a (click)="refresh()" class="navbar-brand" href="#">
+                <img src="assets/logo.jpg" alt="" width="108" height="20">
+            </a>
+            <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a (click)="routingToRegister()" cButton class="light text-black rounded-pill px-4 fw-semibold" variant="ghost" >SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a cButton class="light text-black rounded-pill px-4 fw-semibold" variant="ghost">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <button href="https://jobseeker.toptalentapp.com" type="button" class="btn btn-info text-white rounded-pill px-4">For Jobseeker</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container pt-5 px-5">
+    <div class="row">
+        <p class="text-home1 text-black">Top
+            <span class="text-blue">Company </span>
+            <span>Need a </span>
+            <span class="text-yellow">Toptalent. </span>
+            <span>Find a </span>
+            <span class="text-yellow">perfect talent </span>
+            <span>here!</span>
+        </p>
+        <div class="container mt-5">
+            <div class="row">
+                <img class="pt-5 responsive" width="1300px" src="../../../../assets/homeImage.png" alt="">
+                <img class="image-hover" width="1300px" [src]="isHovered ? '../../../../assets/image-hover.svg' : '../../../../assets/homeImage1.svg'"
+                    alt="" (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid background-img pb-5">
+    <div class="container pt-5">
+        <div class="row">
+            <p class="text-home2 text-black text-center">
+                Our Talents are Hired by 
+            </p>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-2 col-md-4 col-12 mx-5 mb-3 text-center"> <!-- Add text-center class here -->
+                <img class="list-client" src="../../../../assets/logo mandiri 1.svg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-12 mx-5 mb-3 text-center"> <!-- Add text-center class here -->
+                <img class="list-client" src="../../../../assets/danamon logo 1.svg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-12 mx-5 mb-3 text-center"> <!-- Add text-center class here -->
+                <img class="list-client" src="../../../../assets/jaya properti.svg" alt="">
+            </div>
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-lg-2 col-md-4 col-12 mx-5 mb-3 text-center"> <!-- Add text-center class here -->
+                <img class="list-client" src="../../../../assets/carefast.svg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-12 mx-5 mb-3 text-center"> <!-- Add text-center class here -->
+                <img class="list-client" src="../../../../assets/edcore.svg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-12 mx-5 mb-3 text-center "> <!-- Add text-center class here -->
+                <img class="list-client" src="../../../../assets/adis.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <p class="text-home3 text-black text-center">Get your 
+            <span class="text-blue"> dream talent </span>
+            <span>easily, Toptalent will assist you!</span>
+        </p>
+    </div>
+    <div class="container mt-5 ps-5">
+        <div class="row justify-content-center align-items-center background-section3">
+          <div class="col-10 col-lg-2 mx-3 background-sub-section3">
+            <h5 class="text-number">01</h5>
+            <span>
+              <img class="eclips img-fluid" src="../../../../assets/Ellipse 19.png" alt="">
+            </span>
+            <h6 class="title-sec-3 mt-4">Make your Job Branded</h6>
+            <p class="text-sec-3">Candidates will find your job posting easily by making
+              your job advertisement(s) appear directly to the suitable candidate.
+            </p>
+          </div>
+          <div class="col-10 col-lg-2 mx-3 background-sub-section3">
+            <h5 class="text-number">02</h5>
+            <span>
+              <img class="eclips img-fluid" src="../../../../assets/Ellipse 19.png" alt="">
+            </span>
+            <h6 class="title-sec-3 mt-4">Hire The High-Quality Candidate</h6>
+            <p class="text-sec-3">Sort the candidate by adding your standard
+              recruitment qualifications on your job posting.
+            </p>
+          </div>
+          <div class="col-10 col-lg-2 mx-3 background-sub-section3">
+            <h5 class="text-number">03</h5>
+            <span>
+              <img class="eclips img-fluid" src="../../../../assets/Ellipse 19.png" alt="">
+            </span>
+            <h6 class="title-sec-3 mt-4">Candidate Management</h6>
+            <p class="text-sec-3">TopTalent dashboard simplifies recruitment with centralized data, application tracking,
+              interview scheduling, and analytics.
+            </p>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron jumbotron2 jumbotron-fluid background-color-sec-4">
+    <div class="container pt-5">
+        <div class="row">
+            <p class="text-home2 text-black text-center">
+                Choose a 
+                <span class="text-yellow">perfect plan </span>
+                for your team
+            </p>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-2 mt-5 mx-2 background-sub-section4 d-flex flex-column pb-30">
+                <div>
+                    <h5 class="text-sub-title-sec4 text-start text-black mt-5 ms-2">Free</h5>
+                    <p class="rupiah text-start text-black ms-2">Rp</p>
+                    <p>
+                        <span class="money ms-5 me-2 pb-2 text-black">0</span>
+                        <span class="text-black month">/month</span>
+                    </p>
+                    <hr class="line-blue thicker-line-blue">
+                    <p class="text-job-posting">1 Job Posting</p>
+                    <p class="text-job-posting">Features: </p>
+                    <img src="../../../../assets/simple-line-icons_check.png" alt="">
+                    <span class="text-job-posting">
+                        Filter CV candidates
+                    </span>
+                    <br>
+                </div>
+                <div class="mt-auto d-flex justify-content-center">
+                    <button type="button" class="btn btn-info text-white" style="font-weight: 600;">Get Started</button>
+                </div>
+            </div> 
+            <div class="col-lg-2 mt-5 mx-2 background-sub-section4-blue d-flex flex-column pb-30">
+                <div>
+                    <h5 class="text-sub-title-sec4 text-start text-white mt-5 ms-2">Flexible</h5>
+                    <p class="rupiah text-start text-white ms-2">Rp</p>
+                    <span class="money ms-5 me-4 text-decoration-line-through">800.000</span>
+                    <p>
+                        <span class="money ms-5 me-2 pb-2 text-white">500.000</span>
+                        <span class="text-white month">/month</span>
+                    </p>
+                    <hr style="color: white;" class="thicker-line">
+                    <p class="text-job-posting text-white">1 Job Posting</p>
+                    <p class="text-job-posting text-white">Features: </p>
+                    <div class="my-2" style="display: flex; width: 250px;">
+                        <img src="../../../../assets/simple-line-icons_check-white.svg" alt="" style="width: 24px; height: 24px;">&nbsp;
+                        <span class="text-job-posting text-white">
+                            Filter CV candidates
+                        </span>
+                    </div>
+                    <div class="my-2" style="display: flex; width: 250px;">
+                        <img src="../../../../assets/simple-line-icons_check-white.svg" alt="" style="width: 24px; height: 24px;">&nbsp;
+                        <span class="text-job-posting text-white">
+                            Sort data from the most potential candidate
+                        </span>
+                    </div>
+                    <div class="my-2" style="display: flex; width: 250px;">
+                        <img src="../../../../assets/simple-line-icons_check-white.svg" alt="" style="width: 24px; height: 24px;">&nbsp;
+                        <span class="text-job-posting text-white">
+                            Schedule Interview
+                        </span>
+                    </div>
+                </div>
+                <div class="mt-auto d-flex justify-content-center">
+                    <button type="button" class="btn btn-warning text-black" style="font-weight: 600;">Get Started</button>
+                </div>
+            </div>        
+            <div class="col-lg-2 mt-5 mx-2 background-sub-section4 d-flex flex-column pb-30">
+                <div>
+                    <h5 class="text-sub-title-sec4 text-start text-black mt-5 ms-2">Premium</h5>
+                    <p class="rupiah text-start text-black ms-2">Rp</p>
+                    <span class="money ms-5 me-4 text-decoration-line-through">1.500.000</span>
+                    <p>
+                        <span class="money ms-5 me-2 pb-2 text-black">1.000.000</span>
+                        <span class="text-black month">/month</span>
+                    </p>
+                    <hr class="line-blue thicker-line-blue">
+                    <p class="text-job-posting">10 Job Posting</p>
+                    <p class="text-job-posting">Features: </p>
+                    <div class="my-2" style="display: flex; width: 250px;">
+                        <img src="../../../../assets/simple-line-icons_check.png" alt="" style="width: 24px; height: 24px;">&nbsp;
+                        <span class="text-job-posting">
+                            Filter CV candidates
+                        </span>
+                    </div>
+                    <div class="my-2" style="display: flex; width: 250px;">
+                        <img src="../../../../assets/simple-line-icons_check.png" alt="" style="width: 24px; height: 24px;">&nbsp;
+                        <span class="text-job-posting">
+                            Sort data from the most potential candidate
+                        </span>
+                    </div>
+                    <div class="my-2" style="display: flex; width: 250px;">
+                        <img src="../../../../assets/simple-line-icons_check.png" alt="" style="width: 24px; height: 24px;">&nbsp;
+                        <span class="text-job-posting">
+                            Schedule Interview
+                        </span>
+                    </div>
+                    <div class="my-2" style="display: flex; width: 250px;">
+                        <img src="../../../../assets/simple-line-icons_check.png" alt="" style="width: 24px; height: 24px;">&nbsp;
+                        <span class="text-job-posting">
+                            Online Test
+                        </span>
+                    </div>
+                    <div class="my-2" style="display: flex; width: 250px;">
+                        <img src="../../../../assets/simple-line-icons_check.png" alt="" style="width: 24px; height: 24px;">&nbsp;
+                        <span class="text-job-posting">
+                            Review candidates
+                        </span>
+                    </div>
+                    <div class="my-2" style="display: flex; width: 250px;">
+                        <img src="../../../../assets/simple-line-icons_check.png" alt="" style="width: 24px; height: 24px;">&nbsp;
+                        <span class="text-job-posting">
+                            Export data candidates for your internal application
+                        </span>
+                    </div>
+                </div>
+                <div class="mt-auto d-flex justify-content-center">
+                    <button type="button" class="btn btn-info text-white" style="font-weight: 600;">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content background-color-sec-5 mb-30">
+    <div class="container">
+        <div class="row align-items-center items-center">
+            <div class="col-md-8">
+                <h1 class="text-blue" style="font-weight: 900; letter-spacing: 0.3px; width: 600px;">
+                    Time to level up your team! Get your Toptalent now
+                </h1>
+                <button type="button" class="btn btn-info text-white button-sign-up mt-5 align-self-start" style="font-weight: 600;">
+                    Sign Up for Free
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="app-footer mt-auto">
+    <div class="container items-center">
+        <div class="row col-md-12 items-center">
+            <div class="col-md-3 mt-4">
+                <img style="width: 150px; height: 36px; cursor: pointer;" src="../../../../assets/white_logo_toptalent@2x 1.svg" alt="">
+                <br>
+                <img class="mt-4" style="width: 150px; height: 50px; cursor: pointer;" src="../../../../assets/google-playstore.png" alt="">
+            </div>
+            <div class="col-md-3 col-6 mt-4">
+                <p class="text-white font-weight-bold" style="font-size: 28px; font-style: normal;">Toptalent</p>
+                <p class="text-white cursor-pointer" style="font-size: 28px;">About Us</p>
+                <p class="text-white cursor-pointer" style="font-size: 28px;">Contact Us</p>
+            </div>
+            <div class="col-md-3 col-6 mt-4">
+                <p class="text-white font-weight-bold cursor-pointer" style="font-size: 28px;">Jobs</p>
+                <a href="https://jobseeker.toptalentapp.com">
+                    <p class="text-white cursor-pointer" style="font-size: 28px;">Jobseeker</p>
+                </a>
+                <a href="" (click)="refresh()">
+                    <p class="text-white cursor-pointer" style="font-size: 28px;">Recruiter</p>
+                </a>
+            </div>
+            <div class="col-md-3 col-12 mt-4">
+                <p class="text-white font-weight-bold cursor-pointer" style="font-size: 28px;">Find Us</p>
+                <img style="cursor: pointer;" src="../../../../assets/mdi_linkedin.png" alt="">
+                <a href="https://www.instagram.com/toptalent_id/">
+                    <img style="cursor: pointer;" class="ms-2" src="../../../../assets/ri_instagram-fill.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 mt-4">
+                <p class="text-white mt-5 copyright-text" style="width: 500px;">Copyright ©2023 Toptalent. All Rights Reserved</p>
+            </div>   
+        </div>
+    </div>
+</footer>

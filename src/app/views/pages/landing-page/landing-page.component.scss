@@ -1,0 +1,455 @@
+/* for header */
+@media (max-width: 991px) {
+    .navbar-collapse {
+      background-color: #f8f9fa; /* Optional: Add background color for the collapsed menu */
+      padding: 10px; /* Optional: Add padding to the collapsed menu */
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+    }
+  
+    .navbar-toggler {
+      margin-top: 10px; /* Add margin between the logo and the toggler */
+    }
+  
+    .navbar-nav .nav-item {
+      margin-bottom: 8px; /* Add spacing between navigation items */
+    }
+  }
+  
+/* for section-1 */
+.text-black {
+    color: #1B1B1B;
+}
+
+.text-yellow {
+    color: #FFB72C;
+}
+
+.text-blue {
+    color: #44A0F4;
+}
+
+.light:hover {
+    background-color: #edf5e1;
+    border-color: transparent;
+}
+
+.text-home1 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    height: 196px;
+    width: 100%;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .text-home1 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+        max-width: 100%; /* Use max-width: 100% to make it responsive */
+    }
+  }
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .row {
+    position: relative;
+  }
+  
+  .image-hover {
+    position: absolute;
+    width: 450px;
+    top: 355px;
+    left: 780px;
+    z-index: 2; /* Set a higher z-index to place it on top of the .pt-5 image */
+    opacity: 1;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .image-hover {
+      width: 90%; /* Adjust the width for smaller screens */
+      max-width: 250px; /* Set a maximum width for the image */
+      top: 58%; /* Keep the adjusted top position for smaller screens */
+      left: 60%; /* Keep the adjusted left position for smaller screens */
+    }
+  }
+
+ /* for section-2 */
+.text-home2 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    width: 1691px;
+}
+
+ /* Media Query for smaller screens */
+ @media (max-width: 768px) {
+    .text-home2 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+        max-width: 100%; /* Use max-width: 100% to make it responsive */
+    }
+  }
+
+.list-client {
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    background-size: contain;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.04);
+}
+
+.background-img {
+    background-image: url('../../../../assets/background\ sec2.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px; /* Set a minimum height for the background image */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .background-img {
+        min-height: 200px; /* Adjust the minimum height for smaller screens */
+    }
+}
+
+
+//   for section-3
+  .text-home3 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    max-width: 990px; /* Use max-width instead of width */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .text-home3 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+        max-width: 100%; /* Use max-width: 100% to make it responsive */
+    }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .col {
+    min-height: 100px; /* Adjust the height for smaller screens */
+  }
+}
+
+// .background-img {
+//     background-image: url('../../../../assets/background\ sec2.png');
+//     width: 100%;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     min-height: 400px; /* Set a minimum height for the background image */
+// }
+
+.background-section3 {
+    min-height: 400px; /* Set a minimum height for the background image */
+    height: 600px !important;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 64px;
+    background: var(--blue-main, #44A0F4);
+}
+
+@media (max-width: 768px) {
+    .background-section3 {
+        min-height: 1300px; /* Adjust the minimum height for smaller screens */
+    }
+  }
+  
+
+  .background-section3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .background-sub-section3 {
+    flex: 0 0 300px;
+    height: 400px;
+    border-radius: 24px;
+    background: #5AADF8;
+    position: relative; /* Add this to make the 'eclips' position relative to this container */
+    padding: 20px;
+  }
+
+  .text-number {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .eclips {
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    bottom: 300px;
+    right: 180px;
+  }
+
+  .title-sec-3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .text-sec-3 {
+    font-size: 16px;
+    margin: 0;
+    text-align: left; /* Align the text to the left */
+  }
+
+  @media (max-width: 767px) {
+     .background-section3 {
+      align-items: center;
+    }
+    .background-sub-section3 {
+      flex: 0 0 calc(50% - 40px); /* Two columns on mobile */
+      margin: 10px; /* Add some margin between items */
+      width: 600px; 
+    }
+
+    .eclips {
+      position: absolute; /* Reset position to absolute */
+      width: 110px;
+    }
+  }
+
+.title-sec-3 {
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-sec-3 {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 250px;
+}
+
+.background-color-sec-4 {
+    width: 100%;
+    height: 1000px;
+    flex-shrink: 0;
+    background: #ECF5FE;
+}
+
+@media (max-width: 768px) {
+    .background-color-sec-4 {
+        height: 2500px; /* Adjust the minimum height for smaller screens */
+    }
+  }
+
+.background-sub-section4 {
+    width: 330px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 44px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.background-sub-section4-blue {
+    width: 330px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 44px;
+    background: linear-gradient(180deg, #52A2F3 0%, #5EBBE7 46.35%, #66CBDF 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+
+.text-sub-title-sec4 {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.rupiah{
+    font-size: 30px;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.money {
+    color: var(--black-main, #1B1B1B);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.month {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.line-blue {
+    color: #44A0F4;
+    height: 2px;
+}
+
+.text-job-posting {
+    color: var(--black-main, #1B1B1B);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.text-decoration-line-through{
+    color: #D92802;
+}
+
+.thicker-line {
+    height: 4px; /* Set the height/thickness of the line */
+    background-color: white; /* Set the color of the line */
+    border: none;
+    margin: 10px 0; /* Optional: Adjust margin as needed */
+  }
+
+.thicker-line-blue {
+    height: 4px; /* Set the height/thickness of the line */
+    background-color: #44A0F4; /* Set the color of the line */
+    border: none;
+    margin: 10px 0; /* Optional: Adjust margin as needed */
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.background-color-sec-5 {
+    border-radius: 52px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../../../../assets/group-girl-tablet-hold.jpg');
+}
+
+@media (max-width: 768px) {
+    .mb-30 {
+      margin-bottom: 30px;
+    }
+    .background-color-sec-5 {
+        border-radius: 52px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../../../../assets/background-white.jpg');
+        height: 300px !important;; /* Sesuaikan tinggi background yang diinginkan pada perangkat mobile */
+    }
+    .items-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto; /* Ubah tinggi menjadi "auto" agar konten dapat mengatur tinggi sesuai kebutuhan */
+        padding: 20px; /* Tambahkan padding untuk menghindari elemen tepat di tepi layar */
+        text-align: center; /* Teks akan berada di tengah secara horizontal */
+    }
+    
+    .col-md-8 {
+        width: 100%; /* Agar kolom mengambil lebar penuh di perangkat mobile */
+    }
+
+    .text-blue {
+        width: auto; /* Ubah lebar teks menjadi "auto" agar tidak terlalu lebar di perangkat mobile */
+    }
+
+    .button-sign-up {
+        display: block;
+        margin: 0 auto; /* Tengahkan tombol menggunakan margin kiri dan kanan otomatis */
+    }
+  }
+
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.button-sign-up {
+    border-radius: 8px;
+    background: var(--linear-toptalent, linear-gradient(180deg, #54A7F1 0%, #60BFE5 48.96%, #65C9E0 100%));
+}
+
+.background-color-footer {
+    width: 100%;
+    height: 300px;
+    background: var(--linear-toptalent, linear-gradient(180deg, #54A7F1 0%, #60BFE5 48.96%, #65C9E0 100%));
+}
+
+/* Set the body as a flex container with a column layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Use flex-grow to push the content above the footer down */
+.background-color-sec-5 {
+  /* Add any necessary styling for the section above the footer */
+  flex-grow: 1;
+  min-height: calc(100vh - 100px); /* Adjust 100px to create space for the footer */
+}
+
+/* Style the footer */
+.app-footer {
+  /* Add any necessary styling for your footer */
+  background: var(--linear-toptalent, linear-gradient(180deg, #54A7F1 0%, #60BFE5 48.96%, #65C9E0 100%));
+  padding: 20px;
+}
+
+/* Center-align the copyright text on small screens */
+@media (max-width: 767px) {
+  .copyright-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.font-weight-bold {
+  font-weight: bolder;
+}
+
+/* Remove underline from the link */
+a {
+  text-decoration: none;
+}
+
+
+
+

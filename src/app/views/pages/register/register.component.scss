@@ -1,0 +1,94 @@
+.text-title {
+    color: var(--body-text-blackgrey, #111727);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 150% */
+}
+
+.form-control-user {
+    height: 40px;
+    width: 530px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #EFF0F2;
+  }
+
+  .form-control-user2 {
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #EFF0F2;
+  }
+
+.label {
+    color: var(--body-text-blackgrey, #111727);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.form-control-user {
+    position: relative;
+  }
+  
+  
+  .input-container input {
+    padding-right: 32px; /* Set padding to accommodate the icon */
+  }
+  
+  .input-container mat-icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+
+  .text-hint {
+    color: #30F;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .text-hint-option {
+    color: var(--dark-gray, #828282);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--blue-main, #006EFF);
+    border-color: var(--blue-main, #006EFF);
+    height: 40px;
+    width: 530px;
+  }
+
+  .btn-primary:hover {
+    background-color: #4587ec; 
+  }
+
+  .image-login {
+    width: 100%; 
+    height: 100vh; 
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .image-login {
+      height: 40vh;
+    }
+}
+  
+  
